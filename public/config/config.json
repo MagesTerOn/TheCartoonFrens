@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x126250df58884F1a3eF1b970eF7a703a2f2fbA87",
+  "SCAN_LINK": "https://goerli.etherscan.io/address/0x126250df58884f1a3ef1b970ef7a703a2f2fba87",
+  "NETWORK": {
+    "NAME": "Goerli",
+    "SYMBOL": "GoerliETH",
+    "ID": 5
+  },
+  "NFT_NAME": "TheCartoonFrens",
+  "SYMBOL": "TCF",
+  "MAX_SUPPLY": 2222,
+  "WEI_COST": 3300000000000000,
+  "DISPLAY_COST": 0.0033,
+  "GAS_LIMIT": 153225,
+  "MARKETPLACE": "OpenSea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/alphabirdscollection",
+  "SHOW_BACKGROUND": false
+}
