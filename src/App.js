@@ -287,7 +287,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
         flex={1}
         ai={"center"}
         style={{
-          minHeight: "525px",
+          minHeight: "350px",
         
         }}
        
@@ -305,8 +305,8 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
             ai={"center"}
             style={{
                
-              padding: 24,
-              borderRadius: 24,
+              padding:1,
+              borderRadius: 1,
               
             
             }}
@@ -329,7 +329,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
             >
                
             </s.TextDescription>
-            <s.SpacerSmall />
+            
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
@@ -342,7 +342,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                 >
                   You can still find {CONFIG.NFT_NAME} on
                 </s.TextDescription>
-                <s.SpacerSmall />
+               
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                   {CONFIG.MARKETPLACE}
                 </StyledLink>
@@ -355,13 +355,13 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
               {changertext} 
                  
                 </s.TextTitle>
-                <s.SpacerXSmall />
+                 
 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                      
 </s.TextDescription>
-                <s.SpacerSmall />
+                 
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
@@ -375,7 +375,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                                       
                       
                     </s.TextDescription>
-                    <s.SpacerSmall />
+                     
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
@@ -387,7 +387,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
-                        <s.SpacerSmall />
+                         
                         <s.TextDescription
                           style={{ fontSize: "20px",
                             textAlign: "center",
@@ -409,7 +409,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                     >
                       {feedback}
                     </s.TextDescription>
-                    <s.SpacerMedium />
+                    <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
@@ -422,7 +422,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                       >
                         -
                       </StyledRoundButton>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <s.TextDescription
                         style={{fontSize: "20px",
                           textAlign: "center",
@@ -431,7 +431,7 @@ if (data.totalSupply > 0 & data.totalSupply < 2222){
                       >
                         {mintAmount} / {mintMaxAmount}
                       </s.TextDescription>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
